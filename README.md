@@ -8,6 +8,10 @@ saved, analysis-ready regional panel dataset. It was built as a portfolio demons
 data-construction and geospatial-linkage skills relevant to green public finance and regional
 economic development research.
 
+> **Built with AI assistance.** This repository was built with the help of Claude (Anthropic)
+> as a quick demo / proof-of-concept, not production-grade research code. It has not been
+> through the level of review, testing or scrutiny expected of a published research pipeline.
+
 > **This repository currently runs on generated synthetic sample data with the correct
 > schema.** No real EIB, GISCO or Eurostat data has been downloaded. Real data can be dropped
 > into `data/real/` and the pipeline pointed at it - see [Phase 2](#phase-2--real-data) below.
