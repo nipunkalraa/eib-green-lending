@@ -2,49 +2,48 @@
 
 A small, reproducible Python pipeline that reproduces a regional green-finance data workflow:
 it takes European Investment Bank (EIB) green-lending project data, extracts key figures from
-project appraisal PDFs, assigns each investment a NUTS2/NUTS3 region via a spatial join,
-merges it with a Eurostat-style regional indicator, and produces a choropleth map plus a
-saved, analysis-ready regional panel dataset. It was built as a portfolio demonstrator of
-data-construction and geospatial-linkage skills relevant to green public finance and regional
-economic development research.
+project appraisal PDFs, assigns each investment a region, merges it with a Eurostat regional
+economic indicator, and produces a choropleth map plus a saved, analysis-ready regional panel
+dataset. It was built as a portfolio demonstrator of data-construction and geospatial-linkage
+skills relevant to green public finance and regional economic development research.
 
-> **Built with AI assistance.** This repository was built with the help of Claude (Anthropic)
-> as a quick demo / proof-of-concept, not production-grade research code. It has not been
-> through the level of review, testing or scrutiny expected of a published research pipeline.
+> **Built with AI assistance — human in the loop.** This repository was built with the help of
+> Claude (Anthropic) as a quick demo / proof-of-concept, not production-grade research code.
+> Every stage was directed and reviewed by a human; design decisions, data choices and
+> interpretations are my own. It has not been through the level of review, testing or scrutiny
+> expected of a published research pipeline.
 
-> **This repository currently runs on generated synthetic sample data with the correct
-> schema.** No real EIB, GISCO or Eurostat data has been downloaded. Real data can be dropped
-> into `data/real/` and the pipeline pointed at it - see [Phase 2](#phase-2--real-data) below.
-> No statistical "findings" are claimed anywhere in this repository; every figure produced by
-> the pipeline is either synthetic or a plain descriptive aggregate of that synthetic data.
+**This pipeline runs in two modes.** The default **real** mode uses live open data from the
+European Investment Bank, Eurostat GISCO (NUTS 2021), and Eurostat regional accounts. The
+**sample** mode uses a small generated dataset with the same schema and requires no downloads.
+No statistical "findings" are claimed anywhere in this repository; every figure is either a
+plain descriptive aggregate of real data, or clearly labelled synthetic/illustrative.
 
-![Green lending intensity choropleth (synthetic sample data)](outputs/choropleth_preview.png)
+![Green lending intensity by country, 1959-2026 (real EIB data, country-level)](outputs/choropleth_preview.png)
 
 ## What this demonstrates
 
-- **Dataset construction from heterogeneous sources** - combining a project-level CSV with
+- **Dataset construction from heterogeneous sources** - combining a project-level export with
   figures extracted from PDF documents into a single analysis-ready table.
-- **PDF extraction** - systematic, regex-based extraction of labelled financial variables
-  (total project cost, EIB finance, co-financing) from project appraisal PDFs using
-  `pdfplumber`.
-- **Spatial joins for geographic identifiers** - point-in-polygon joins with `geopandas` to
-  assign each investment a consistent NUTS2 and NUTS3 region code, with explicit CRS handling
-  (EPSG:4326).
+- **PDF extraction** - regex-based extraction of financial variables from project PDFs using
+  `pdfplumber`, adapted honestly to what each document type actually contains (see
+  [Known limitations](#known-limitations)).
+- **Geographic identifier assignment** - a genuine point-in-polygon spatial join with
+  `geopandas` in sample mode (NUTS2/NUTS3, explicit EPSG:4326 CRS handling); a country-level
+  attribute join in real mode, because the public EIB export has no project coordinates.
 - **Merging on regional keys** - aggregating project-level data to a region-by-year panel and
-  joining it onto a regional economic indicator by NUTS code and year.
+  joining it onto a regional economic indicator by region code and year.
 - **Visualisation** - a choropleth of regional lending intensity, plus sector and time-series
   breakdowns.
 
-## Data sources (Phase 2 targets)
-
-The pipeline is designed around three public data sources. None are downloaded yet - this is
-where Phase 2 will point the pipeline once the sample-data version is working end-to-end.
+## Data sources
 
 | Source | What it provides | URL |
 |---|---|---|
-| EIB Open Data / list of financed projects | Project-level records: amounts, sectors, locations, signature dates | https://data.eib.org/ |
-| Eurostat GISCO - NUTS boundaries | Official NUTS2/NUTS3 boundary geometries for the spatial join | https://ec.europa.eu/eurostat/web/gisco/geodata/statistical-units/territorial-units-statistics |
-| Eurostat regional accounts | Regional economic indicators (e.g. gross fixed capital formation at NUTS2, employment/firm demography at NUTS3) | https://ec.europa.eu/eurostat/web/regions/database |
+| EIB financed-projects list | Project-level records: name, country, sector, signature date, signed amount | [eib.org/en/projects/loans/index.htm](https://www.eib.org/en/projects/loans/index.htm) (manual "Export to Excel" - no static download URL exists) |
+| EIB project appraisal PDFs | "Environmental and Social Data Sheet" documents for individual projects | `eib.org/attachments/registers/*.pdf` (see [Reproducibility](#reproducibility) for exact URLs used) |
+| Eurostat GISCO - NUTS 2021 boundaries | NUTS2/NUTS3 boundary geometries (GeoJSON, EPSG:4326) | [Nuts2json](https://github.com/eurostat/Nuts2json) distribution |
+| Eurostat regional accounts | Regional GDP, `nama_10r_2gdp` (NUTS2, current prices, MIO_EUR) | fetched via the [`eurostat`](https://pypi.org/project/eurostat/) Python package |
 
 ## How to run
 
@@ -61,105 +60,158 @@ source .venv/bin/activate
 pip install -r requirements.txt
 ```
 
-**Option A - run the notebook** (recommended; this is what a reader is most likely to open):
+**Sample mode** (zero downloads, runs immediately):
+
+```bash
+python src/generate_synthetic.py
+python src/load_lending.py --mode sample
+python src/extract_pdf.py --mode sample
+python src/assign_nuts.py --mode sample
+python src/merge_regional.py --mode sample
+python src/visualise.py --mode sample
+```
+
+**Real mode:**
+
+```bash
+python src/fetch_real.py
+```
+
+This downloads NUTS boundaries, the Eurostat GDP indicator, and 5 sample EIB PDFs
+automatically. It **cannot** download the EIB financed-projects list - that export is behind a
+JS-driven search UI with no static URL. You'll need to:
+
+1. Open [eib.org/en/projects/loans/index.htm](https://www.eib.org/en/projects/loans/index.htm)
+2. Search/filter as you like, then click "Export to Excel"
+3. Save the result as `data/real/eib/eib_projects.csv` (despite the extension, this is read as
+   a genuine `.xlsx` file - EIB's export format, not actually CSV)
+
+Then run the same five stages with `--mode real` (or omit `--mode` entirely - it auto-detects
+real mode once `data/real/` is fully populated).
+
+**Or just run the notebook** (recommended; this is what a reader is most likely to open):
 
 ```bash
 jupyter notebook notebook.ipynb
 ```
 
-Run all cells top to bottom. The first cell regenerates the synthetic sample data with a
-fixed seed, so re-running the whole notebook always reproduces the same output.
-
-**Option B - run the pipeline stage by stage** from the command line:
-
-```bash
-python src/generate_synthetic.py   # writes data/sample/*
-python src/load_lending.py         # loads + validates the lending CSV
-python src/extract_pdf.py          # extracts figures from the sample PDFs
-python src/assign_nuts.py          # spatial join -> NUTS2/NUTS3 codes
-python src/merge_regional.py       # builds outputs/merged_panel.csv
-python src/visualise.py            # writes outputs/*.png
-```
+Set `MODE = "sample"` or `MODE = "real"` in the second cell and run all cells top to bottom.
 
 ## Methodology
 
-**Data construction (`generate_synthetic.py`, `load_lending.py`).** The sample lending table
-(`data/sample/lending.csv`) is generated with a fixed random seed: 200 projects across 10
-European countries, several sectors (a mix of green sectors - renewable energy, energy
-efficiency, clean transport, water management - and non-green sectors), and signed years
-2014-2023. `load_lending.py` validates the schema (required columns, coordinate ranges,
-positive amounts, no duplicate project IDs) before anything downstream touches it.
+**Data construction (`load_lending.py`).** Sample mode generates 200 synthetic projects across
+10 countries and several sectors with a fixed random seed. Real mode loads a manually-exported
+EIB financed-projects list spanning **1959-2026** (the Bank's full lending history) - 29,564
+projects after dropping ~3 rows with missing essentials. The real export has no explicit
+climate-classification field, so `climate_action` there is a **keyword-derived heuristic** on
+the Sector/Description text (matches on "climate", "renewable", "solar", "energy efficiency",
+etc.) - not an authoritative EIB tag. `load_lending.py` validates the schema (required columns,
+coordinate ranges where present, positive amounts, no duplicate IDs) before anything downstream
+touches it.
 
-**PDF extraction (`extract_pdf.py`).** Five synthetic EIB-style project appraisal PDFs are
-generated with `reportlab`, each containing narrative text plus three labelled EUR figures.
-`extract_pdf.py` uses `pdfplumber` to pull the text back out and regexes out
-`total_project_cost_eur`, `eib_finance_eur` and `cofinancing_eur`, then sanity-checks that EIB
-finance plus co-financing reconstructs the total cost. This demonstrates the extraction
-machinery on a small corpus; it is a regex-based parser tuned to this document's label format,
-not a general-purpose PDF parser.
+**PDF extraction (`extract_pdf.py`).** Sample mode extracts three labelled EUR figures (total
+project cost, EIB finance, co-financing) from five synthetic PDFs with a fixed format - all
+three are always present by construction. Real mode extracts from five real EIB
+"Environmental and Social Data Sheet" documents, which are environmental/social compliance
+sheets, not financial appraisals: only 1 of 5 mentions a total project cost at all (in
+narrative prose, e.g. "total project investment cost of EUR 200m"), and none disclose the
+EIB-finance/co-financing split. Real-mode extraction is honestly best-effort - it pulls project
+identity fields (always present) and a total cost when mentioned, leaving it `NaN` otherwise.
 
-**Spatial join (`assign_nuts.py`).** Each project's `(lat, lon)` is converted to a point and
-joined against a NUTS boundaries file with `geopandas.sjoin`. The synthetic boundaries file
-(`data/sample/nuts_boundaries.geojson`) contains simple rectangular polygons standing in for
-real GISCO geometries, but mirrors their structure: both NUTS2 and NUTS3 features live in one
-file, distinguished by `LEVL_CODE`, and NUTS3 codes nest under their parent NUTS2 code (e.g.
-`DE101` under `DE10`) the same way real NUTS codes do. Both the points and the polygons are
-explicit EPSG:4326 before the join.
+**Region assignment (`assign_nuts.py`).** Sample mode converts each project's `(lat, lon)` to a
+point and performs a genuine `geopandas.sjoin` against a NUTS boundaries file (synthetic
+rectangles mirroring real GISCO structure: NUTS2 and NUTS3 in one file via `LEVL_CODE`, NUTS3
+codes nesting under their parent NUTS2 code). Real mode **cannot** do this - the public EIB
+export has no project coordinates - so it does a country-level attribute join instead: the
+project's free-text country name is resolved to an ISO code via `pycountry`, remapped onto
+GISCO's country-code convention (which uses "EL" for Greece and "UK" for the United Kingdom,
+not ISO's "GR"/"GB"), and matched against the ~37 countries GISCO's NUTS boundaries cover. EIB
+lends globally, so about 16% of real projects (development finance in Africa, Asia, Latin
+America, etc.) fall outside NUTS coverage and are reported as unmatched, not guessed.
 
-**Regional merge (`merge_regional.py`).** Project-level lending is aggregated to a NUTS2 x
-year panel (total signed amount, climate-relevant amount, project counts), then left-joined
-onto a synthetic Eurostat-style regional indicator (`gfcf_eur_millions`, standing in for gross
-fixed capital formation - the indicator named in Eurostat's regional accounts for NUTS2). The
-join starts from the indicator table so every region-year is retained, including ones with no
-recorded lending activity, rather than silently dropping them.
+**Regional merge (`merge_regional.py`).** Project-level lending is aggregated to a region x
+year panel, then left-joined onto a regional indicator so every region-year is retained,
+including ones with no recorded lending. Sample mode's indicator is a synthetic
+gross-fixed-capital-formation-style series at NUTS2. Real mode uses Eurostat's `nama_10r_2gdp`
+(regional GDP, NUTS2, current prices, MIO_EUR), summed up to country level to match real
+mode's coarser geography.
 
-**Visualisation (`visualise.py`).** Three plots, all `matplotlib`/`geopandas`: a choropleth of
-total climate-relevant lending per NUTS2 region over 2014-2023, a bar chart of total lending
-by sector, and a line chart of lending over time (all sectors vs. climate-relevant only).
+**Visualisation (`visualise.py`).** Three plots: a choropleth of total climate-relevant lending
+(by NUTS2 in sample mode, by country in real mode - NUTS2 polygons dissolved to national
+boundaries), a bar chart of total lending by sector, and a line chart of lending over time (all
+sectors vs. climate-relevant only).
+
+## Reproducibility
+
+Real-mode files were fetched on **2026-07-09** from:
+
+- NUTS2 boundaries: `https://raw.githubusercontent.com/eurostat/Nuts2json/master/pub/v2/2021/4326/20M/nutsrg_2.json`
+- NUTS3 boundaries: `https://raw.githubusercontent.com/eurostat/Nuts2json/master/pub/v2/2021/4326/20M/nutsrg_3.json`
+- Regional GDP: `eurostat.get_data_df("nama_10r_2gdp")` via the `eurostat` Python package
+- 5 EIB project PDFs:
+  - `https://www.eib.org/attachments/registers/222930995.pdf` (ENPAL REPOWEREU RENEWABLE ENERGY, Germany)
+  - `https://www.eib.org/attachments/registers/169004943.pdf` (AGRIA FOOD PRODUCTION CAPACITY, Bulgaria)
+  - `https://www.eib.org/attachments/registers/246665048.pdf` (NORDLB RENEWABLE ENERGY 2, Germany/Regional EU)
+  - `https://www.eib.org/attachments/registers/213872807.pdf` (SOLOMON SOLAR PV, Italy)
+  - `https://www.eib.org/attachments/registers/142353117.pdf` (EDUCATION MONTPELLIER, France)
+- EIB financed-projects list: manually exported from `eib.org/en/projects/loans/index.htm`
+  ("Export to Excel", unfiltered) on 2026-07-09. This one can't be re-fetched by script - see
+  [How to run](#how-to-run).
+
+Re-running `python src/fetch_real.py` re-downloads everything except the EIB list (idempotent -
+add `--force` to re-download files that already exist). Since EIB's register is a live, growing
+dataset, a re-export will not be byte-identical to the one used here, but will have the same
+schema.
 
 ## Repository structure
 
 ```
 eib-green-lending/
 ├── src/
-│   ├── generate_synthetic.py   # seeded synthetic data generator (lending, NUTS, regional, PDFs)
-│   ├── load_lending.py         # load + validate the lending CSV
-│   ├── extract_pdf.py          # pdfplumber extraction from project PDFs
-│   ├── assign_nuts.py          # point-in-polygon join -> NUTS2/NUTS3 codes
-│   ├── merge_regional.py       # region-by-year panel + regional indicator merge
-│   └── visualise.py            # choropleth, sector, and time-series charts
+│   ├── config.py                # mode resolution (sample/real) and path constants
+│   ├── generate_synthetic.py    # seeded synthetic data generator (lending, NUTS, regional, PDFs)
+│   ├── fetch_real.py            # downloads real GISCO/Eurostat/EIB-PDF data into data/real/
+│   ├── load_lending.py          # load + validate lending data (real: maps EIB export schema)
+│   ├── extract_pdf.py           # pdfplumber extraction from project PDFs
+│   ├── assign_nuts.py           # NUTS spatial join (sample) / country attribute join (real)
+│   ├── merge_regional.py        # region-by-year panel + regional indicator merge
+│   └── visualise.py             # choropleth, sector, and time-series charts
 ├── data/
-│   ├── sample/                 # synthetic sample data (generated, not hand-written)
-│   └── real/                   # empty - Phase 2 real data goes here
-├── outputs/                    # generated PNGs + merged_panel.csv (gitignored except the README preview image)
-├── notebook.ipynb              # narrative walkthrough of the full pipeline
+│   ├── sample/                  # synthetic sample data (generated, not hand-written)
+│   └── real/                    # real data (gitignored) - eib/, gisco/, eurostat/
+├── outputs/                     # generated PNGs + merged_panel.csv (gitignored except the README preview image)
+├── notebook.ipynb               # narrative walkthrough of the full pipeline (MODE toggle)
 ├── requirements.txt
 └── README.md
 ```
 
-## Limitations
+## Known limitations
 
-- All data in this repository is synthetic: fake rectangular "regions" instead of real NUTS
-  geometries, and randomly generated financial figures. Nothing here is a real economic
-  estimate.
-- The sample is small by design (200 projects, 5 PDFs) - enough to exercise every stage of the
-  pipeline, not to represent the scale of a real 20-year EIB panel.
-- The PDF extraction is a regex parser tuned to the label format used in the synthetic
-  documents. Real EIB project appraisal PDFs would need their own extraction rules (and likely
-  more defensive handling of missing/malformed fields).
+- **Real mode is country-level, not NUTS2/NUTS3.** The public EIB financed-projects export has
+  no project-level coordinates (nor city, nor a project ID) - only a free-text country name.
+  Sample mode demonstrates the full point-in-polygon NUTS2/NUTS3 spatial join on synthetic
+  coordinates with the correct schema; real mode's regional linkage is necessarily coarser.
+- **`climate_action` in real mode is a keyword heuristic**, not an official EIB classification.
+  EIB's public search export doesn't expose its internal Climate Action tagging.
+- **Real PDF extraction is sparse by design, not by bug.** EIB's public "Environmental and
+  Social Data Sheet" documents are environmental/social compliance sheets, not financial
+  appraisals; in the 5 documents used here, only 1 mentions a total project cost, and none
+  disclose the EIB-finance/co-financing split.
+- **EIB lends globally; NUTS only covers ~37 European countries.** About 16% of real projects
+  fall outside GISCO's NUTS coverage and are reported as unmatched rather than guessed.
+- **NUTS vintage:** Eurostat's `nama_10r_2gdp` geo codes matched cleanly against GISCO's NUTS
+  2021 codes in this run (no unmatched-name warning was raised) - but `merge_regional.py`
+  checks this explicitly on every run and will print a warning rather than silently patching
+  a mismatch with an invented crosswalk if a future re-fetch does disagree.
 - No causal inference or econometric modelling (e.g. difference-in-differences, event-study)
   is included. This repository's scope is data construction and descriptive visualisation.
-- The synthetic NUTS regions don't overlap by construction, so the spatial join here can't
-  demonstrate how the pipeline would behave with genuinely adjacent or oddly-shaped real
-  boundaries.
+- The synthetic sample data (200 projects, 5 PDFs, 10 fake rectangular regions) is small by
+  design - enough to exercise every stage of the pipeline, not to represent real scale.
 
-## Phase 2 - real data
+## Acknowledgements
 
-To swap in real data: download EIB project records, GISCO NUTS boundary files, and Eurostat
-regional accounts data into `data/real/`, then point `load_lending.py`, `assign_nuts.py`, and
-`merge_regional.py` at those files instead of the `data/sample/` defaults. Each module's
-`load_*` function takes a `path` argument for exactly this purpose - the transformation logic
-downstream doesn't need to change, as long as the real files expose the same columns.
+Built rapidly with AI coding assistance (Claude Code); design decisions, data choices, and
+interpretations are my own.
 
 ## License
 

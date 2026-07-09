@@ -6,3 +6,7 @@ reportlab
 matplotlib
 numpy
 jupyter
+eurostat
+requests
+pycountry
+openpyxl
