@@ -1,0 +1,467 @@
+{
+  "mode": "real",
+  "generated_at": "2026-07-09T19:42:03.262689+00:00",
+  "total_lending_eur": 1914524694303.0,
+  "total_projects": 29564,
+  "climate_relevant_projects": 2907,
+  "countries_covered": 34,
+  "year_range": [
+    1959,
+    2026
+  ],
+  "top_regions": [
+    {
+      "nuts_id": "ES",
+      "nuts_name": "Spain",
+      "total_lending_eur": 211834896416.0
+    },
+    {
+      "nuts_id": "IT",
+      "nuts_name": "Italy",
+      "total_lending_eur": 208852340582.0
+    },
+    {
+      "nuts_id": "DE",
+      "nuts_name": "Germany",
+      "total_lending_eur": 164792348104.0
+    },
+    {
+      "nuts_id": "FR",
+      "nuts_name": "France",
+      "total_lending_eur": 156519439467.0
+    },
+    {
+      "nuts_id": "PL",
+      "nuts_name": "Poland",
+      "total_lending_eur": 95091207589.0
+    },
+    {
+      "nuts_id": "PT",
+      "nuts_name": "Portugal",
+      "total_lending_eur": 43040469326.0
+    },
+    {
+      "nuts_id": "EL",
+      "nuts_name": "Greece",
+      "total_lending_eur": 40886377337.0
+    },
+    {
+      "nuts_id": "NL",
+      "nuts_name": "Netherlands",
+      "total_lending_eur": 36449955453.0
+    },
+    {
+      "nuts_id": "SE",
+      "nuts_name": "Sweden",
+      "total_lending_eur": 33868075872.0
+    },
+    {
+      "nuts_id": "AT",
+      "nuts_name": "Austria",
+      "total_lending_eur": 33801959875.0
+    }
+  ],
+  "sector_breakdown": [
+    {
+      "sector": "Credit lines",
+      "total_eur": 520806193639.0
+    },
+    {
+      "sector": "Transport",
+      "total_eur": 407700313189.0
+    },
+    {
+      "sector": "Energy",
+      "total_eur": 300196370582.0
+    },
+    {
+      "sector": "Industry",
+      "total_eur": 195764901679.0
+    },
+    {
+      "sector": "Water, sewerage",
+      "total_eur": 96025800014.0
+    },
+    {
+      "sector": "Telecom",
+      "total_eur": 83804052024.0
+    },
+    {
+      "sector": "Urban development",
+      "total_eur": 78254042428.0
+    },
+    {
+      "sector": "Services",
+      "total_eur": 75158143372.0
+    },
+    {
+      "sector": "Education",
+      "total_eur": 59914376946.0
+    },
+    {
+      "sector": "Health",
+      "total_eur": 49397604706.0
+    },
+    {
+      "sector": "Composite infrastructure",
+      "total_eur": 25473242921.0
+    },
+    {
+      "sector": "Agriculture, fisheries, forestry",
+      "total_eur": 12030809639.0
+    },
+    {
+      "sector": "Solid waste",
+      "total_eur": 9998843164.0
+    }
+  ],
+  "lending_over_time": [
+    {
+      "year": 1959,
+      "total_eur": 34127485.0,
+      "climate_eur": 0.0
+    },
+    {
+      "year": 1960,
+      "total_eur": 25457443.0,
+      "climate_eur": 0.0
+    },
+    {
+      "year": 1961,
+      "total_eur": 86543246.0,
+      "climate_eur": 0.0
+    },
+    {
+      "year": 1962,
+      "total_eur": 66347208.0,
+      "climate_eur": 0.0
+    },
+    {
+      "year": 1963,
+      "total_eur": 71171474.0,
+      "climate_eur": 0.0
+    },
+    {
+      "year": 1964,
+      "total_eur": 120382700.0,
+      "climate_eur": 0.0
+    },
+    {
+      "year": 1965,
+      "total_eur": 109092187.0,
+      "climate_eur": 0.0
+    },
+    {
+      "year": 1966,
+      "total_eur": 197024000.0,
+      "climate_eur": 0.0
+    },
+    {
+      "year": 1967,
+      "total_eur": 212585688.0,
+      "climate_eur": 0.0
+    },
+    {
+      "year": 1968,
+      "total_eur": 214042535.0,
+      "climate_eur": 0.0
+    },
+    {
+      "year": 1969,
+      "total_eur": 321813515.0,
+      "climate_eur": 0.0
+    },
+    {
+      "year": 1970,
+      "total_eur": 354390595.0,
+      "climate_eur": 0.0
+    },
+    {
+      "year": 1971,
+      "total_eur": 502511738.0,
+      "climate_eur": 0.0
+    },
+    {
+      "year": 1972,
+      "total_eur": 524469332.0,
+      "climate_eur": 0.0
+    },
+    {
+      "year": 1973,
+      "total_eur": 847544809.0,
+      "climate_eur": 0.0
+    },
+    {
+      "year": 1974,
+      "total_eur": 1119291918.0,
+      "climate_eur": 0.0
+    },
+    {
+      "year": 1975,
+      "total_eur": 1006563388.0,
+      "climate_eur": 0.0
+    },
+    {
+      "year": 1976,
+      "total_eur": 1273017051.0,
+      "climate_eur": 0.0
+    },
+    {
+      "year": 1977,
+      "total_eur": 1573369835.0,
+      "climate_eur": 0.0
+    },
+    {
+      "year": 1978,
+      "total_eur": 2178934477.0,
+      "climate_eur": 0.0
+    },
+    {
+      "year": 1979,
+      "total_eur": 3071161068.0,
+      "climate_eur": 0.0
+    },
+    {
+      "year": 1980,
+      "total_eur": 3477882347.0,
+      "climate_eur": 0.0
+    },
+    {
+      "year": 1981,
+      "total_eur": 3838966553.0,
+      "climate_eur": 0.0
+    },
+    {
+      "year": 1982,
+      "total_eur": 4694509521.0,
+      "climate_eur": 0.0
+    },
+    {
+      "year": 1983,
+      "total_eur": 5946140086.0,
+      "climate_eur": 0.0
+    },
+    {
+      "year": 1984,
+      "total_eur": 6902614445.0,
+      "climate_eur": 0.0
+    },
+    {
+      "year": 1985,
+      "total_eur": 7117854779.0,
+      "climate_eur": 0.0
+    },
+    {
+      "year": 1986,
+      "total_eur": 7544748209.0,
+      "climate_eur": 0.0
+    },
+    {
+      "year": 1987,
+      "total_eur": 7844343577.0,
+      "climate_eur": 0.0
+    },
+    {
+      "year": 1988,
+      "total_eur": 10180067128.0,
+      "climate_eur": 0.0
+    },
+    {
+      "year": 1989,
+      "total_eur": 12246092380.0,
+      "climate_eur": 58757255.0
+    },
+    {
+      "year": 1990,
+      "total_eur": 13540866685.0,
+      "climate_eur": 0.0
+    },
+    {
+      "year": 1991,
+      "total_eur": 15393535146.0,
+      "climate_eur": 0.0
+    },
+    {
+      "year": 1992,
+      "total_eur": 17032460761.0,
+      "climate_eur": 0.0
+    },
+    {
+      "year": 1993,
+      "total_eur": 19437165582.0,
+      "climate_eur": 0.0
+    },
+    {
+      "year": 1994,
+      "total_eur": 19928715823.0,
+      "climate_eur": 0.0
+    },
+    {
+      "year": 1995,
+      "total_eur": 21414032803.0,
+      "climate_eur": 0.0
+    },
+    {
+      "year": 1996,
+      "total_eur": 23315263736.0,
+      "climate_eur": 0.0
+    },
+    {
+      "year": 1997,
+      "total_eur": 26104872838.0,
+      "climate_eur": 21000000.0
+    },
+    {
+      "year": 1998,
+      "total_eur": 29293641112.0,
+      "climate_eur": 16497056.0
+    },
+    {
+      "year": 1999,
+      "total_eur": 31599070088.0,
+      "climate_eur": 0.0
+    },
+    {
+      "year": 2000,
+      "total_eur": 35486824172.0,
+      "climate_eur": 36201903.0
+    },
+    {
+      "year": 2001,
+      "total_eur": 36753105982.0,
+      "climate_eur": 402823013.0
+    },
+    {
+      "year": 2002,
+      "total_eur": 39618750972.0,
+      "climate_eur": 713774624.0
+    },
+    {
+      "year": 2003,
+      "total_eur": 42273946387.0,
+      "climate_eur": 616308442.0
+    },
+    {
+      "year": 2004,
+      "total_eur": 43308089369.0,
+      "climate_eur": 683658841.0
+    },
+    {
+      "year": 2005,
+      "total_eur": 47376237645.0,
+      "climate_eur": 631566942.0
+    },
+    {
+      "year": 2006,
+      "total_eur": 45529410443.0,
+      "climate_eur": 1609250000.0
+    },
+    {
+      "year": 2007,
+      "total_eur": 47384404982.0,
+      "climate_eur": 2907834679.0
+    },
+    {
+      "year": 2008,
+      "total_eur": 57933961214.0,
+      "climate_eur": 1495424236.0
+    },
+    {
+      "year": 2009,
+      "total_eur": 78856892038.0,
+      "climate_eur": 3254872593.0
+    },
+    {
+      "year": 2010,
+      "total_eur": 71892680043.0,
+      "climate_eur": 5790647389.0
+    },
+    {
+      "year": 2011,
+      "total_eur": 60804030862.0,
+      "climate_eur": 6657326984.0
+    },
+    {
+      "year": 2012,
+      "total_eur": 52361845098.0,
+      "climate_eur": 5051306694.0
+    },
+    {
+      "year": 2013,
+      "total_eur": 71284998100.0,
+      "climate_eur": 9838667246.0
+    },
+    {
+      "year": 2014,
+      "total_eur": 76803423395.0,
+      "climate_eur": 7738369849.0
+    },
+    {
+      "year": 2015,
+      "total_eur": 78073673340.0,
+      "climate_eur": 4718330613.0
+    },
+    {
+      "year": 2016,
+      "total_eur": 74951112630.0,
+      "climate_eur": 5124643490.0
+    },
+    {
+      "year": 2017,
+      "total_eur": 70024710731.0,
+      "climate_eur": 8342156320.0
+    },
+    {
+      "year": 2018,
+      "total_eur": 55839174249.0,
+      "climate_eur": 7756391313.0
+    },
+    {
+      "year": 2019,
+      "total_eur": 63128684294.0,
+      "climate_eur": 8869932502.0
+    },
+    {
+      "year": 2020,
+      "total_eur": 66110062411.0,
+      "climate_eur": 9993228573.0
+    },
+    {
+      "year": 2021,
+      "total_eur": 65436652531.0,
+      "climate_eur": 11210369686.0
+    },
+    {
+      "year": 2022,
+      "total_eur": 65290797917.0,
+      "climate_eur": 17837556166.0
+    },
+    {
+      "year": 2023,
+      "total_eur": 75125283795.0,
+      "climate_eur": 21067053913.0
+    },
+    {
+      "year": 2024,
+      "total_eur": 76464315473.0,
+      "climate_eur": 26455031217.0
+    },
+    {
+      "year": 2025,
+      "total_eur": 83722541691.0,
+      "climate_eur": 24584250175.0
+    },
+    {
+      "year": 2026,
+      "total_eur": 31926399248.0,
+      "climate_eur": 11181137055.0
+    }
+  ],
+  "limitations": [
+    "Real mode is country-level, not NUTS2/NUTS3: the public EIB financed-projects export has no project-level coordinates, so regions here are countries, not sub-national NUTS2 areas.",
+    "climate_action is a keyword heuristic on Sector/Description text, not an official EIB classification - the public export exposes no internal Climate Action flag.",
+    "PDF-derived financial figures are sparse by design: EIB's public appraisal PDFs are environmental/social compliance sheets, not financial appraisals, and rarely disclose cost figures.",
+    "EIB lends globally; NUTS only covers ~37 European countries, so a meaningful share of real projects fall outside this map's coverage and are excluded rather than guessed at.",
+    "No causal inference or econometric modelling is included - this is data construction and descriptive visualisation only."
+  ]
+}

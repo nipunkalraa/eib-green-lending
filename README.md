@@ -21,6 +21,19 @@ plain descriptive aggregate of real data, or clearly labelled synthetic/illustra
 
 ![Green lending intensity by country, 1959-2026 (real EIB data, country-level)](outputs/choropleth_preview.png)
 
+## Interactive dashboard
+
+**Live: [PLACEHOLDER - add the Vercel URL here after deploying]**
+
+A Next.js dashboard sits on top of this pipeline's output - an interactive choropleth (hover
+for stats, click a region for a detail panel with a sector breakdown), supporting charts, a
+top-10 regions table, and the same Known Limitations shown below. It's a pure static frontend:
+no backend, no API routes, just two JSON/GeoJSON files exported by
+`src/export_frontend_data.py`. See [frontend/README.md](frontend/README.md) for local dev and
+deploy instructions.
+
+![EIB Green-Lending dashboard screenshot](frontend/public/screenshot.png)
+
 ## What this demonstrates
 
 - **Dataset construction from heterogeneous sources** - combining a project-level export with
@@ -175,11 +188,13 @@ eib-green-lending/
 │   ├── extract_pdf.py           # pdfplumber extraction from project PDFs
 │   ├── assign_nuts.py           # NUTS spatial join (sample) / country attribute join (real)
 │   ├── merge_regional.py        # region-by-year panel + regional indicator merge
-│   └── visualise.py             # choropleth, sector, and time-series charts
+│   ├── visualise.py             # choropleth, sector, and time-series charts (matplotlib)
+│   └── export_frontend_data.py  # exports nuts_lending.geojson + summary.json for frontend/
 ├── data/
 │   ├── sample/                  # synthetic sample data (generated, not hand-written)
 │   └── real/                    # real data (gitignored) - eib/, gisco/, eurostat/
 ├── outputs/                     # generated PNGs + merged_panel.csv (gitignored except the README preview image)
+├── frontend/                    # Next.js dashboard - static frontend, reads frontend/public/data/ only
 ├── notebook.ipynb               # narrative walkthrough of the full pipeline (MODE toggle)
 ├── requirements.txt
 └── README.md

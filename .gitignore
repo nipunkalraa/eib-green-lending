@@ -26,3 +26,8 @@ Thumbs.db
 
 # Claude Code local tool config
 .claude/
+
+# Frontend (Next.js) - also covered by frontend/.gitignore, listed here explicitly
+frontend/node_modules/
+frontend/.next/
+frontend/.vercel/
