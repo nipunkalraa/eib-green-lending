@@ -1,0 +1,8 @@
+pandas
+geopandas
+shapely
+pdfplumber
+reportlab
+matplotlib
+numpy
+jupyter

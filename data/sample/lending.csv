@@ -1,0 +1,201 @@
+project_id,project_name,country,city,lat,lon,signed_amount_eur,sector,climate_action,signed_year
+EIB-2014-0000,"Energy Efficiency Facility, Porto",PT,Porto,41.6879,-9.0551,54700000.0,Energy Efficiency,True,2014
+EIB-2018-0001,"Water Management Facility, Marseille",FR,Marseille,49.8533,1.3327,52400000.0,Water Management,True,2018
+EIB-2014-0002,Energy Efficiency Investment Programme - Cluj-Napoca,RO,Cluj-Napoca,47.0933,21.6531,48300000.0,Energy Efficiency,True,2014
+EIB-2023-0003,Water Management Investment Programme - Dublin,IE,Dublin,54.113,-6.5848,39100000.0,Water Management,True,2023
+EIB-2021-0004,Clean Transport Investment Programme - Athens,EL,Athens,41.1343,24.743,34900000.0,Clean Transport,True,2021
+EIB-2015-0005,"Energy Efficiency Facility, Marseille",FR,Marseille,47.1018,-0.3776,28100000.0,Energy Efficiency,True,2015
+EIB-2020-0006,"Renewable Energy Facility, Cork",IE,Cork,54.28,-8.6755,58800000.0,Renewable Energy,True,2020
+EIB-2020-0007,Energy Efficiency Investment Programme - Hamburg,DE,Hamburg,49.4194,8.1922,52400000.0,Energy Efficiency,True,2020
+EIB-2016-0008,Energy Efficiency Upgrade - Germany,DE,Hamburg,51.6693,10.4583,41200000.0,Energy Efficiency,True,2016
+EIB-2018-0009,Renewable Energy Upgrade - Germany,DE,Berlin,52.8665,11.2132,56000000.0,Renewable Energy,True,2018
+EIB-2020-0010,Cork Water Management Initiative,IE,Cork,52.3652,-8.2278,43700000.0,Water Management,True,2020
+EIB-2014-0011,"Water Management Facility, Porto",PT,Porto,38.5505,-8.5684,81100000.0,Water Management,True,2014
+EIB-2018-0012,Water Management Upgrade - Spain,ES,Barcelona,37.302,-0.1134,38800000.0,Water Management,True,2018
+EIB-2018-0013,Renewable Energy Upgrade - Romania,RO,Bucharest,45.7543,22.345,70000000.0,Renewable Energy,True,2018
+EIB-2016-0014,Cluj-Napoca Renewable Energy Initiative,RO,Cluj-Napoca,45.1834,25.675,18200000.0,Renewable Energy,True,2016
+EIB-2023-0015,Athens Industry Initiative,EL,Athens,37.5559,24.4682,124100000.0,Industry,False,2023
+EIB-2021-0016,Turin Water Management Initiative,IT,Turin,43.6085,7.3844,90000000.0,Water Management,True,2021
+EIB-2019-0017,"Renewable Energy Facility, Turin",IT,Turin,43.282,7.9551,52600000.0,Renewable Energy,True,2019
+EIB-2015-0018,Energy Efficiency Upgrade - Romania,RO,Cluj-Napoca,44.0462,25.8139,56700000.0,Energy Efficiency,True,2015
+EIB-2017-0019,Renewable Energy Investment Programme - Cork,IE,Cork,52.0205,-9.2797,21800000.0,Renewable Energy,True,2017
+EIB-2018-0020,Urban Infrastructure Upgrade - Germany,DE,Berlin,48.3391,11.3955,17900000.0,Urban Infrastructure,False,2018
+EIB-2014-0021,Energy Efficiency Investment Programme - Athens,EL,Athens,38.7026,23.1686,66800000.0,Energy Efficiency,True,2014
+EIB-2023-0022,Barcelona Water Management Initiative,ES,Barcelona,39.0968,-2.3429,45300000.0,Water Management,True,2023
+EIB-2015-0023,Urban Infrastructure Upgrade - Greece,EL,Athens,36.7537,23.5796,35600000.0,Urban Infrastructure,False,2015
+EIB-2023-0024,Clean Transport Upgrade - Spain,ES,Madrid,42.2457,-5.4812,21800000.0,Clean Transport,True,2023
+EIB-2017-0025,Renewable Energy Upgrade - Germany,DE,Berlin,53.1303,13.0915,26600000.0,Renewable Energy,True,2017
+EIB-2023-0026,Clean Transport Upgrade - Italy,IT,Turin,38.3687,13.3459,36400000.0,Clean Transport,True,2023
+EIB-2022-0027,Industry Investment Programme - Rome,IT,Rome,43.5246,12.0151,46000000.0,Industry,False,2022
+EIB-2017-0028,"Renewable Energy Facility, Barcelona",ES,Barcelona,36.8235,-3.4602,146500000.0,Renewable Energy,True,2017
+EIB-2016-0029,"Industry Facility, Lyon",FR,Lyon,49.2698,-0.4284,44100000.0,Industry,False,2016
+EIB-2014-0030,"Clean Transport Facility, Berlin",DE,Berlin,52.9422,9.4033,37900000.0,Clean Transport,True,2014
+EIB-2014-0031,"Clean Transport Facility, Barcelona",ES,Barcelona,37.07,-4.5546,78500000.0,Clean Transport,True,2014
+EIB-2021-0032,Water Management Upgrade - Sweden,SE,Stockholm,63.0175,14.1178,94900000.0,Water Management,True,2021
+EIB-2015-0033,Dublin Clean Transport Initiative,IE,Dublin,52.9325,-6.4608,39800000.0,Clean Transport,True,2015
+EIB-2019-0034,"Energy Efficiency Facility, Barcelona",ES,Barcelona,36.3641,0.7285,59300000.0,Energy Efficiency,True,2019
+EIB-2015-0035,Clean Transport Upgrade - Italy,IT,Rome,44.0602,9.6757,186000000.0,Clean Transport,True,2015
+EIB-2020-0036,Valencia Industry Initiative,ES,Valencia,36.9204,-6.1644,30000000.0,Industry,False,2020
+EIB-2019-0037,Berlin Water Management Initiative,DE,Berlin,53.4932,11.5027,235000000.0,Water Management,True,2019
+EIB-2015-0038,Milan Water Management Initiative,IT,Milan,40.4227,12.8592,222000000.0,Water Management,True,2015
+EIB-2022-0039,"Renewable Energy Facility, Paris",FR,Paris,44.606,-0.5525,38600000.0,Renewable Energy,True,2022
+EIB-2023-0040,Athens Industry Initiative,EL,Athens,37.0442,25.8179,38400000.0,Industry,False,2023
+EIB-2014-0041,Renewable Energy Upgrade - Spain,ES,Barcelona,37.3526,-5.879,33900000.0,Renewable Energy,True,2014
+EIB-2022-0042,Cluj-Napoca Water Management Initiative,RO,Cluj-Napoca,47.2875,24.7821,30200000.0,Water Management,True,2022
+EIB-2016-0043,"Renewable Energy Facility, Thessaloniki",EL,Thessaloniki,39.1133,21.7213,65500000.0,Renewable Energy,True,2016
+EIB-2022-0044,Water Management Upgrade - Italy,IT,Rome,37.5689,12.6176,70000000.0,Water Management,True,2022
+EIB-2023-0045,"Industry Facility, Valencia",ES,Valencia,41.4934,1.1447,60100000.0,Industry,False,2023
+EIB-2022-0046,Clean Transport Investment Programme - Lyon,FR,Lyon,49.4312,2.351,8300000.0,Clean Transport,True,2022
+EIB-2016-0047,Energy Efficiency Investment Programme - Cork,IE,Cork,53.1814,-9.2968,62900000.0,Energy Efficiency,True,2016
+EIB-2021-0048,Paris Clean Transport Initiative,FR,Paris,48.383,1.3942,39600000.0,Clean Transport,True,2021
+EIB-2018-0049,"Urban Infrastructure Facility, Thessaloniki",EL,Thessaloniki,38.9307,22.203,169500000.0,Urban Infrastructure,False,2018
+EIB-2021-0050,Urban Infrastructure Upgrade - Romania,RO,Cluj-Napoca,46.7131,23.2459,21900000.0,Urban Infrastructure,False,2021
+EIB-2015-0051,"Urban Infrastructure Facility, Lyon",FR,Lyon,44.7801,3.0621,178800000.0,Urban Infrastructure,False,2015
+EIB-2023-0052,Urban Infrastructure Investment Programme - Dublin,IE,Dublin,53.5404,-6.9168,78100000.0,Urban Infrastructure,False,2023
+EIB-2016-0053,Urban Infrastructure Investment Programme - Gothenburg,SE,Gothenburg,56.5649,17.8647,62200000.0,Urban Infrastructure,False,2016
+EIB-2020-0054,Barcelona Energy Efficiency Initiative,ES,Barcelona,41.475,-0.4942,155000000.0,Energy Efficiency,True,2020
+EIB-2015-0055,"Urban Infrastructure Facility, Dublin",IE,Dublin,51.9719,-9.3784,64700000.0,Urban Infrastructure,False,2015
+EIB-2021-0056,Renewable Energy Upgrade - Germany,DE,Munich,52.8514,13.5784,60400000.0,Renewable Energy,True,2021
+EIB-2015-0057,Thessaloniki Energy Efficiency Initiative,EL,Thessaloniki,40.9743,21.1015,23800000.0,Energy Efficiency,True,2015
+EIB-2023-0058,Renewable Energy Upgrade - Germany,DE,Munich,51.1242,12.7401,50400000.0,Renewable Energy,True,2023
+EIB-2023-0059,"Water Management Facility, Gothenburg",SE,Gothenburg,63.4399,13.3374,43300000.0,Water Management,True,2023
+EIB-2019-0060,Renewable Energy Upgrade - Spain,ES,Madrid,41.6476,-2.8472,20800000.0,Renewable Energy,True,2019
+EIB-2017-0061,Energy Efficiency Investment Programme - Porto,PT,Porto,40.794,-6.9121,18600000.0,Energy Efficiency,True,2017
+EIB-2021-0062,Thessaloniki Urban Infrastructure Initiative,EL,Thessaloniki,41.2954,20.8492,31400000.0,Urban Infrastructure,False,2021
+EIB-2022-0063,Clean Transport Upgrade - Poland,PL,Warsaw,50.8078,15.4204,44100000.0,Clean Transport,True,2022
+EIB-2016-0064,"Renewable Energy Facility, Krakow",PL,Krakow,49.725,15.4748,89400000.0,Renewable Energy,True,2016
+EIB-2016-0065,"Urban Infrastructure Facility, Marseille",FR,Marseille,44.5491,4.7308,84500000.0,Urban Infrastructure,False,2016
+EIB-2022-0066,Water Management Upgrade - Sweden,SE,Gothenburg,57.5362,12.5855,129000000.0,Water Management,True,2022
+EIB-2015-0067,Krakow Urban Infrastructure Initiative,PL,Krakow,50.588,20.7831,38900000.0,Urban Infrastructure,False,2015
+EIB-2019-0068,Urban Infrastructure Upgrade - Portugal,PT,Porto,37.3948,-7.6976,45600000.0,Urban Infrastructure,False,2019
+EIB-2014-0069,Lisbon Clean Transport Initiative,PT,Lisbon,41.7081,-8.8228,31600000.0,Clean Transport,True,2014
+EIB-2018-0070,Water Management Upgrade - Ireland,IE,Cork,52.6342,-6.3943,17800000.0,Water Management,True,2018
+EIB-2023-0071,Barcelona Clean Transport Initiative,ES,Barcelona,39.5551,-5.1719,63800000.0,Clean Transport,True,2023
+EIB-2023-0072,Water Management Investment Programme - Stockholm,SE,Stockholm,59.5939,15.1252,63100000.0,Water Management,True,2023
+EIB-2018-0073,Clean Transport Investment Programme - Milan,IT,Milan,41.377,8.2452,22900000.0,Clean Transport,True,2018
+EIB-2015-0074,Stockholm Energy Efficiency Initiative,SE,Stockholm,60.8485,17.6956,37600000.0,Energy Efficiency,True,2015
+EIB-2017-0075,Clean Transport Upgrade - Italy,IT,Milan,41.0989,12.2908,22500000.0,Clean Transport,True,2017
+EIB-2022-0076,Water Management Upgrade - Ireland,IE,Cork,54.5553,-6.6089,48100000.0,Water Management,True,2022
+EIB-2017-0077,Clean Transport Investment Programme - Hamburg,DE,Hamburg,51.2143,13.1454,76800000.0,Clean Transport,True,2017
+EIB-2014-0078,Urban Infrastructure Investment Programme - Lisbon,PT,Lisbon,37.9958,-8.4313,96200000.0,Urban Infrastructure,False,2014
+EIB-2022-0079,Rome Clean Transport Initiative,IT,Rome,39.8431,12.7815,93600000.0,Clean Transport,True,2022
+EIB-2019-0080,Milan Clean Transport Initiative,IT,Milan,42.6819,13.7678,33800000.0,Clean Transport,True,2019
+EIB-2017-0081,"Clean Transport Facility, Gothenburg",SE,Gothenburg,55.7976,18.3525,87000000.0,Clean Transport,True,2017
+EIB-2018-0082,Clean Transport Investment Programme - Munich,DE,Munich,51.5914,14.2228,26900000.0,Clean Transport,True,2018
+EIB-2018-0083,Water Management Upgrade - Poland,PL,Krakow,50.0682,18.1836,54800000.0,Water Management,True,2018
+EIB-2017-0084,Water Management Investment Programme - Lisbon,PT,Lisbon,37.4054,-6.9415,16700000.0,Water Management,True,2017
+EIB-2019-0085,"Energy Efficiency Facility, Madrid",ES,Madrid,36.7552,-2.551,15400000.0,Energy Efficiency,True,2019
+EIB-2018-0086,Clean Transport Upgrade - Poland,PL,Krakow,49.9673,20.9981,24700000.0,Clean Transport,True,2018
+EIB-2022-0087,"Clean Transport Facility, Marseille",FR,Marseille,48.8886,2.1263,207800000.0,Clean Transport,True,2022
+EIB-2015-0088,Industry Upgrade - Greece,EL,Thessaloniki,38.744,22.2776,34900000.0,Industry,False,2015
+EIB-2023-0089,"Renewable Energy Facility, Krakow",PL,Krakow,50.5165,19.9943,93900000.0,Renewable Energy,True,2023
+EIB-2020-0090,"Clean Transport Facility, Athens",EL,Athens,39.2522,22.076,47700000.0,Clean Transport,True,2020
+EIB-2020-0091,Energy Efficiency Upgrade - Romania,RO,Bucharest,46.2435,28.1708,119800000.0,Energy Efficiency,True,2020
+EIB-2016-0092,Urban Infrastructure Upgrade - Sweden,SE,Gothenburg,63.5879,19.7072,82400000.0,Urban Infrastructure,False,2016
+EIB-2019-0093,Clean Transport Upgrade - Sweden,SE,Gothenburg,64.5253,18.4794,21300000.0,Clean Transport,True,2019
+EIB-2020-0094,Water Management Upgrade - Spain,ES,Madrid,36.4702,-5.3586,37200000.0,Water Management,True,2020
+EIB-2018-0095,"Industry Facility, Thessaloniki",EL,Thessaloniki,38.299,26.1653,33400000.0,Industry,False,2018
+EIB-2016-0096,"Clean Transport Facility, Paris",FR,Paris,44.4255,4.5403,15400000.0,Clean Transport,True,2016
+EIB-2020-0097,"Renewable Energy Facility, Gothenburg",SE,Gothenburg,62.7409,19.0473,28400000.0,Renewable Energy,True,2020
+EIB-2023-0098,Industry Investment Programme - Hamburg,DE,Hamburg,53.4346,11.6155,51100000.0,Industry,False,2023
+EIB-2014-0099,Clean Transport Upgrade - Italy,IT,Turin,43.559,9.5496,129800000.0,Clean Transport,True,2014
+EIB-2021-0100,Rome Urban Infrastructure Initiative,IT,Rome,41.3913,8.8225,40200000.0,Urban Infrastructure,False,2021
+EIB-2015-0101,"Industry Facility, Warsaw",PL,Warsaw,51.2729,15.8446,17600000.0,Industry,False,2015
+EIB-2021-0102,Cluj-Napoca Urban Infrastructure Initiative,RO,Cluj-Napoca,46.057,22.1714,14900000.0,Urban Infrastructure,False,2021
+EIB-2018-0103,Industry Investment Programme - Bucharest,RO,Bucharest,45.1981,22.154,23100000.0,Industry,False,2018
+EIB-2023-0104,Athens Energy Efficiency Initiative,EL,Athens,38.3439,22.2941,15300000.0,Energy Efficiency,True,2023
+EIB-2016-0105,"Water Management Facility, Marseille",FR,Marseille,45.6341,5.0687,16100000.0,Water Management,True,2016
+EIB-2016-0106,Water Management Upgrade - Poland,PL,Krakow,51.0772,20.1661,19900000.0,Water Management,True,2016
+EIB-2022-0107,Dublin Energy Efficiency Initiative,IE,Dublin,53.4406,-8.7803,65600000.0,Energy Efficiency,True,2022
+EIB-2023-0108,Cork Water Management Initiative,IE,Cork,54.2254,-7.3714,35200000.0,Water Management,True,2023
+EIB-2019-0109,Water Management Investment Programme - Stockholm,SE,Stockholm,61.6416,13.1782,37100000.0,Water Management,True,2019
+EIB-2023-0110,Renewable Energy Investment Programme - Munich,DE,Munich,48.4506,7.9313,9900000.0,Renewable Energy,True,2023
+EIB-2019-0111,Gothenburg Renewable Energy Initiative,SE,Gothenburg,56.1637,15.2007,24300000.0,Renewable Energy,True,2019
+EIB-2018-0112,Water Management Upgrade - France,FR,Lyon,46.6042,0.8447,78700000.0,Water Management,True,2018
+EIB-2022-0113,Rome Renewable Energy Initiative,IT,Rome,40.808,6.7088,21300000.0,Renewable Energy,True,2022
+EIB-2018-0114,"Clean Transport Facility, Lisbon",PT,Lisbon,38.6835,-8.6231,10100000.0,Clean Transport,True,2018
+EIB-2016-0115,Krakow Energy Efficiency Initiative,PL,Krakow,53.9798,17.7136,22500000.0,Energy Efficiency,True,2016
+EIB-2020-0116,Renewable Energy Investment Programme - Bucharest,RO,Bucharest,47.4672,22.1813,55900000.0,Renewable Energy,True,2020
+EIB-2015-0117,Renewable Energy Investment Programme - Porto,PT,Porto,38.3115,-7.6876,114800000.0,Renewable Energy,True,2015
+EIB-2016-0118,Industry Investment Programme - Milan,IT,Milan,38.3555,11.0957,38500000.0,Industry,False,2016
+EIB-2023-0119,Water Management Investment Programme - Krakow,PL,Krakow,52.4758,18.6539,174500000.0,Water Management,True,2023
+EIB-2019-0120,Lisbon Industry Initiative,PT,Lisbon,38.1952,-7.7381,78000000.0,Industry,False,2019
+EIB-2014-0121,"Energy Efficiency Facility, Munich",DE,Munich,48.3161,9.66,33900000.0,Energy Efficiency,True,2014
+EIB-2022-0122,Energy Efficiency Upgrade - France,FR,Marseille,47.8224,5.0191,50400000.0,Energy Efficiency,True,2022
+EIB-2015-0123,Renewable Energy Investment Programme - Thessaloniki,EL,Thessaloniki,41.258,23.2945,48200000.0,Renewable Energy,True,2015
+EIB-2017-0124,Urban Infrastructure Upgrade - Sweden,SE,Stockholm,63.7115,20.8141,43400000.0,Urban Infrastructure,False,2017
+EIB-2014-0125,Clean Transport Upgrade - Spain,ES,Madrid,38.1454,-1.7813,65800000.0,Clean Transport,True,2014
+EIB-2015-0126,Renewable Energy Upgrade - Sweden,SE,Gothenburg,58.0083,20.5893,27700000.0,Renewable Energy,True,2015
+EIB-2020-0127,"Clean Transport Facility, Rome",IT,Rome,41.2253,11.853,45600000.0,Clean Transport,True,2020
+EIB-2023-0128,Water Management Upgrade - Germany,DE,Hamburg,51.3734,12.8518,35100000.0,Water Management,True,2023
+EIB-2017-0129,Industry Upgrade - Portugal,PT,Porto,37.8871,-7.5253,22500000.0,Industry,False,2017
+EIB-2023-0130,"Water Management Facility, Rome",IT,Rome,40.5356,8.2062,13600000.0,Water Management,True,2023
+EIB-2019-0131,Gothenburg Water Management Initiative,SE,Gothenburg,62.3533,19.3205,66000000.0,Water Management,True,2019
+EIB-2020-0132,"Water Management Facility, Gothenburg",SE,Gothenburg,56.6087,19.8617,135800000.0,Water Management,True,2020
+EIB-2023-0133,Clean Transport Investment Programme - Warsaw,PL,Warsaw,53.0088,18.0663,46800000.0,Clean Transport,True,2023
+EIB-2019-0134,Energy Efficiency Upgrade - France,FR,Lyon,47.8708,1.6049,38800000.0,Energy Efficiency,True,2019
+EIB-2017-0135,Cork Energy Efficiency Initiative,IE,Cork,52.1064,-8.3812,63300000.0,Energy Efficiency,True,2017
+EIB-2021-0136,"Renewable Energy Facility, Thessaloniki",EL,Thessaloniki,40.0429,20.8034,53000000.0,Renewable Energy,True,2021
+EIB-2015-0137,"Energy Efficiency Facility, Milan",IT,Milan,40.5258,10.4063,48400000.0,Energy Efficiency,True,2015
+EIB-2016-0138,"Renewable Energy Facility, Madrid",ES,Madrid,36.9306,-2.5342,49600000.0,Renewable Energy,True,2016
+EIB-2022-0139,Paris Energy Efficiency Initiative,FR,Paris,50.2059,5.1017,23000000.0,Energy Efficiency,True,2022
+EIB-2023-0140,Energy Efficiency Investment Programme - Thessaloniki,EL,Thessaloniki,36.6946,23.5727,15200000.0,Energy Efficiency,True,2023
+EIB-2015-0141,Clean Transport Upgrade - Greece,EL,Thessaloniki,37.0176,21.7449,104200000.0,Clean Transport,True,2015
+EIB-2022-0142,Thessaloniki Clean Transport Initiative,EL,Thessaloniki,40.0761,22.6696,45100000.0,Clean Transport,True,2022
+EIB-2015-0143,Athens Industry Initiative,EL,Athens,36.712,25.6663,52500000.0,Industry,False,2015
+EIB-2014-0144,Valencia Clean Transport Initiative,ES,Valencia,40.8876,-4.436,112400000.0,Clean Transport,True,2014
+EIB-2019-0145,Water Management Upgrade - Romania,RO,Cluj-Napoca,44.7037,22.9637,40000000.0,Water Management,True,2019
+EIB-2017-0146,"Industry Facility, Porto",PT,Porto,39.6368,-8.0244,66800000.0,Industry,False,2017
+EIB-2015-0147,Cork Energy Efficiency Initiative,IE,Cork,53.1943,-6.3719,158400000.0,Energy Efficiency,True,2015
+EIB-2015-0148,Water Management Investment Programme - Madrid,ES,Madrid,36.9851,-6.0716,58000000.0,Water Management,True,2015
+EIB-2018-0149,Energy Efficiency Investment Programme - Rome,IT,Rome,40.9764,9.5432,63300000.0,Energy Efficiency,True,2018
+EIB-2017-0150,Urban Infrastructure Upgrade - Poland,PL,Krakow,53.9351,16.3619,22200000.0,Urban Infrastructure,False,2017
+EIB-2021-0151,Renewable Energy Investment Programme - Cluj-Napoca,RO,Cluj-Napoca,46.7784,25.6212,66500000.0,Renewable Energy,True,2021
+EIB-2016-0152,Warsaw Urban Infrastructure Initiative,PL,Warsaw,54.2695,15.2175,41800000.0,Urban Infrastructure,False,2016
+EIB-2015-0153,"Renewable Energy Facility, Marseille",FR,Marseille,48.0569,-0.2185,58500000.0,Renewable Energy,True,2015
+EIB-2021-0154,Energy Efficiency Upgrade - Spain,ES,Valencia,40.158,-1.2844,68200000.0,Energy Efficiency,True,2021
+EIB-2015-0155,Water Management Upgrade - Romania,RO,Cluj-Napoca,47.1686,26.0145,77800000.0,Water Management,True,2015
+EIB-2016-0156,Urban Infrastructure Upgrade - Sweden,SE,Stockholm,61.706,17.3016,92000000.0,Urban Infrastructure,False,2016
+EIB-2021-0157,Water Management Upgrade - Sweden,SE,Stockholm,60.8126,16.0701,85500000.0,Water Management,True,2021
+EIB-2015-0158,Cork Industry Initiative,IE,Cork,52.9653,-8.5675,77900000.0,Industry,False,2015
+EIB-2020-0159,Paris Renewable Energy Initiative,FR,Paris,48.2437,3.3542,65200000.0,Renewable Energy,True,2020
+EIB-2023-0160,"Renewable Energy Facility, Warsaw",PL,Warsaw,52.7721,17.0748,51900000.0,Renewable Energy,True,2023
+EIB-2016-0161,Krakow Energy Efficiency Initiative,PL,Krakow,53.8875,20.328,66600000.0,Energy Efficiency,True,2016
+EIB-2019-0162,"Water Management Facility, Gothenburg",SE,Gothenburg,61.3919,14.649,103900000.0,Water Management,True,2019
+EIB-2020-0163,Marseille Water Management Initiative,FR,Marseille,46.6404,-1.1351,50000000.0,Water Management,True,2020
+EIB-2022-0164,"Renewable Energy Facility, Gothenburg",SE,Gothenburg,60.6554,15.2933,81500000.0,Renewable Energy,True,2022
+EIB-2016-0165,"Clean Transport Facility, Warsaw",PL,Warsaw,53.9498,22.1363,25600000.0,Clean Transport,True,2016
+EIB-2016-0166,"Water Management Facility, Gothenburg",SE,Gothenburg,59.8537,16.8138,140100000.0,Water Management,True,2016
+EIB-2016-0167,Munich Clean Transport Initiative,DE,Munich,50.7009,11.3603,138400000.0,Clean Transport,True,2016
+EIB-2017-0168,Urban Infrastructure Investment Programme - Marseille,FR,Marseille,49.0648,1.0865,137500000.0,Urban Infrastructure,False,2017
+EIB-2015-0169,Renewable Energy Upgrade - Portugal,PT,Lisbon,41.7936,-8.2858,26400000.0,Renewable Energy,True,2015
+EIB-2022-0170,Energy Efficiency Upgrade - Sweden,SE,Stockholm,56.3337,21.6159,45000000.0,Energy Efficiency,True,2022
+EIB-2022-0171,Gothenburg Water Management Initiative,SE,Gothenburg,56.7178,18.5692,17000000.0,Water Management,True,2022
+EIB-2016-0172,Clean Transport Upgrade - Ireland,IE,Dublin,53.7233,-7.3298,31600000.0,Clean Transport,True,2016
+EIB-2014-0173,Water Management Investment Programme - Dublin,IE,Dublin,54.7277,-7.1798,119300000.0,Water Management,True,2014
+EIB-2017-0174,Renewable Energy Investment Programme - Milan,IT,Milan,42.791,9.2087,19400000.0,Renewable Energy,True,2017
+EIB-2017-0175,Marseille Water Management Initiative,FR,Marseille,49.0885,4.0166,22300000.0,Water Management,True,2017
+EIB-2023-0176,"Clean Transport Facility, Turin",IT,Turin,40.9903,7.79,25000000.0,Clean Transport,True,2023
+EIB-2018-0177,Renewable Energy Investment Programme - Porto,PT,Porto,37.3603,-7.286,41400000.0,Renewable Energy,True,2018
+EIB-2014-0178,Renewable Energy Investment Programme - Hamburg,DE,Hamburg,51.4875,13.0442,30900000.0,Renewable Energy,True,2014
+EIB-2021-0179,Renewable Energy Upgrade - Poland,PL,Warsaw,53.1607,17.1566,47000000.0,Renewable Energy,True,2021
+EIB-2018-0180,Cork Energy Efficiency Initiative,IE,Cork,54.0296,-9.0498,81100000.0,Energy Efficiency,True,2018
+EIB-2015-0181,Renewable Energy Investment Programme - Turin,IT,Turin,40.0294,12.5441,98100000.0,Renewable Energy,True,2015
+EIB-2023-0182,Warsaw Renewable Energy Initiative,PL,Warsaw,54.1877,21.8506,9000000.0,Renewable Energy,True,2023
+EIB-2020-0183,Athens Renewable Energy Initiative,EL,Athens,39.9471,21.9634,25100000.0,Renewable Energy,True,2020
+EIB-2018-0184,Industry Upgrade - Germany,DE,Munich,51.8695,7.5512,13100000.0,Industry,False,2018
+EIB-2021-0185,Porto Energy Efficiency Initiative,PT,Porto,39.7816,-7.1508,55500000.0,Energy Efficiency,True,2021
+EIB-2018-0186,Berlin Renewable Energy Initiative,DE,Berlin,48.6031,12.0042,49600000.0,Renewable Energy,True,2018
+EIB-2020-0187,"Industry Facility, Dublin",IE,Dublin,54.4598,-9.1809,146100000.0,Industry,False,2020
+EIB-2017-0188,Industry Investment Programme - Warsaw,PL,Warsaw,50.5992,19.6519,26100000.0,Industry,False,2017
+EIB-2016-0189,Rome Renewable Energy Initiative,IT,Rome,38.4506,9.7014,46500000.0,Renewable Energy,True,2016
+EIB-2016-0190,Marseille Energy Efficiency Initiative,FR,Marseille,45.8153,1.2373,93000000.0,Energy Efficiency,True,2016
+EIB-2023-0191,Industry Investment Programme - Lisbon,PT,Lisbon,37.6941,-9.0404,14100000.0,Industry,False,2023
+EIB-2023-0192,"Renewable Energy Facility, Cluj-Napoca",RO,Cluj-Napoca,45.8568,27.0206,86500000.0,Renewable Energy,True,2023
+EIB-2017-0193,Renewable Energy Investment Programme - Munich,DE,Munich,51.7189,13.9354,74300000.0,Renewable Energy,True,2017
+EIB-2019-0194,Stockholm Industry Initiative,SE,Stockholm,59.1647,21.5205,62900000.0,Industry,False,2019
+EIB-2017-0195,Clean Transport Upgrade - Romania,RO,Cluj-Napoca,44.1235,22.5718,122200000.0,Clean Transport,True,2017
+EIB-2018-0196,Porto Clean Transport Initiative,PT,Porto,41.4631,-7.6538,14100000.0,Clean Transport,True,2018
+EIB-2018-0197,Cluj-Napoca Energy Efficiency Initiative,RO,Cluj-Napoca,45.5935,25.2323,61800000.0,Energy Efficiency,True,2018
+EIB-2014-0198,Thessaloniki Water Management Initiative,EL,Thessaloniki,37.0469,20.7773,100600000.0,Water Management,True,2014
+EIB-2019-0199,"Energy Efficiency Facility, Thessaloniki",EL,Thessaloniki,37.5129,24.8088,27800000.0,Energy Efficiency,True,2019

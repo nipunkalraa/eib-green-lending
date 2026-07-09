@@ -1,0 +1,28 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.eggs/
+
+# Virtual environment
+.venv/
+venv/
+env/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Project-specific
+data/real/*
+!data/real/.gitkeep
+outputs/*
+!outputs/.gitkeep
+# small preview image kept in git so it renders on the GitHub README
+!outputs/choropleth_preview.png
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Claude Code local tool config
+.claude/
