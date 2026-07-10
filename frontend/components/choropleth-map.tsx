@@ -75,7 +75,7 @@ export function ChoroplethMap() {
     map.addControl(new maplibregl.NavigationControl({ showCompass: false }), "top-right");
 
     map.on("load", async () => {
-      const res = await fetch("/data/nuts_lending.geojson");
+      const res = await fetch(`${process.env.NEXT_PUBLIC_BASE_PATH ?? ""}/data/nuts_lending.geojson`);
       const geojson = await res.json();
 
       geojson.features.forEach((f: GeoJSON.Feature) => {
