@@ -9,8 +9,12 @@ export function Footer() {
         <div className="flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
           <div className="max-w-2xl text-sm text-muted-foreground">
             <p>
-              Built with AI assistance — human in the loop. Design decisions, data choices, and
+              Built with AI assistance, human in the loop. Design decisions, data choices, and
               interpretations are my own.
+            </p>
+            <p className="mt-2">
+              Motivation: a proof of concept built for a job advert I saw at LSE, under Professor
+              Neil Lee.
             </p>
           </div>
           <a

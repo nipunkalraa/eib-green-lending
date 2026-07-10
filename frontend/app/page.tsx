@@ -28,7 +28,12 @@ export default async function Home() {
           </h1>
           <p className="text-base text-muted-foreground sm:text-lg">
             Where the European Investment Bank&apos;s lending has gone since 1959, and how much
-            of it is climate-relevant — built on real, publicly-sourced data.
+            of it is climate-relevant, built on real, publicly-sourced data.
+          </p>
+          <p className="text-base text-muted-foreground sm:text-lg">
+            The EIB is the EU&apos;s climate bank and one of the largest sources of development
+            finance in the world, yet its regional footprint is rarely visible at a glance. This
+            dashboard makes that footprint explorable, region by region.
           </p>
         </div>
         <StatsRow summary={summary} />
@@ -75,6 +80,27 @@ export default async function Home() {
       {/* 5. Methodology & limitations */}
       <section className="space-y-3">
         <MethodologySection summary={summary} />
+      </section>
+
+      {/* 6. Outcomes / so what */}
+      <section className="space-y-3">
+        <Card>
+          <CardHeader>
+            <CardTitle className="font-serif text-xl">Outcomes and so what</CardTitle>
+          </CardHeader>
+          <CardContent className="space-y-3 text-sm leading-relaxed text-muted-foreground">
+            <p>
+              The regional breakdown surfaces where EIB lending, and its climate share, concentrate
+              or lag, patterns that are easy to assert but hard to see without linking project data
+              to region-level geography. That link is what this pipeline builds.
+            </p>
+            <p>
+              For research or policy use, it offers a reusable base for asking sharper questions,
+              for example whether climate-relevant lending tracks regional need, or whether it
+              follows existing capacity instead.
+            </p>
+          </CardContent>
+        </Card>
       </section>
     </div>
   );
