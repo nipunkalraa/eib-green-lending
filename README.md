@@ -23,7 +23,7 @@ plain descriptive aggregate of real data, or clearly labelled synthetic/illustra
 
 ## Interactive dashboard
 
-**Live: [PLACEHOLDER - (https://v0.app/nipunkalra198-9022/chat/new-chat-6hM8uyjBzMN)]**
+**Live: {https://nipunkalraa.github.io/eib-green-lending/}**
 
 A Next.js dashboard sits on top of this pipeline's output - an interactive choropleth (hover
 for stats, click a region for a detail panel with a sector breakdown), supporting charts, a
