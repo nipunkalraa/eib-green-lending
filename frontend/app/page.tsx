@@ -82,7 +82,7 @@ export default async function Home() {
         <MethodologySection summary={summary} />
       </section>
 
-      {/* 6. Outcomes / so what */}
+      {/* 6. Outcomes / 'so what' */}
       <section className="space-y-3">
         <Card>
           <CardHeader>
